@@ -1,0 +1,85 @@
+
+#boton1{
+    /* Este estilo es necesario para que el borde no se muestre con dos colores */
+    border-style: solid;
+    border-color: #0A3871;
+    color: white;
+    text-size-adjust:auto;
+    font-weight: bold;
+    width: 300px;
+    height: 60px;
+    padding: 15px;
+    margin: 10px;
+    width: 22%;;
+    background-color: #0A3871 ;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#boton1:hover{
+    background-color: rgb(0, 0, 112); 
+    border-color: rgb(0, 0, 112);
+    transform: scale(1.05);
+}
+
+#boton2{
+    /* Este estilo es necesario para que el borde no se muestre con dos colores */
+    border-style: solid;
+    color: #0A3871;
+    text-size-adjust:auto;
+    font-weight: bold;
+    width: 300px;
+    height: 60px;
+    padding: 15px;
+    margin: 10px;
+    width: 22%;;
+    border-radius: 20px;
+    background-color: #D8DFE8;
+    border-color: #0A3871;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#boton2:hover{
+    transform: scale(1.05);
+}
+
+#boton3{
+    /* Este estilo es necesario para que el borde no se muestre con dos colores */ 
+    border-style: solid;
+    color: #0A3871;
+    text-size-adjust:auto;
+    font-weight: bold;
+    display: none;
+    width: 30px;
+    height: 8%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 90%;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    border-color: #0A3871;
+    cursor: pointer;
+}
+
+/* #boton3:hover{
+
+} */
+
+@media screen and (max-width: 768px){
+    #boton1, #boton2{
+        width: 90%;
+    }
+
+    #boton3{
+        width: 90%;
+        height: 100px;
+        margin-top: 0%;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (min-width: 365px){
+
+}

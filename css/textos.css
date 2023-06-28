@@ -1,0 +1,67 @@
+/*Input para ingresar el tecto a encriptar*/
+.textInput{
+    background-color: rgb(221, 225, 233);
+    border-style: hidden;
+    color: rgb(0, 0, 112);
+    font-size: 50px;
+    height: 500px;
+    outline:none;
+    overflow-wrap: break-word;
+    text-align: left;
+    vertical-align: top;
+    width: 90%;
+}
+
+.textInput::placeholder{
+    color: rgb(0, 0, 112);
+}
+
+#texto-input-salida{
+    display: none;
+    margin-top: 2vh;
+    text-align: justify;
+    font-size:calc(1.5vw);
+    overflow-wrap: break-word;
+    width: 90%;
+    height: 80vh;
+}
+
+#avisoIngreso{
+    font-size: 25px;
+    text-align:center;
+    font-weight: bold;
+    overflow-wrap: break-word;
+}
+
+#avisoIngreso2{
+    font-size: 20px;
+    text-align:center;
+}
+
+@media screen and (max-width: 768px){
+    #avisoIngreso{
+        font-size: 25px;
+
+    }
+    #avisoIngreso2{
+        font-size: 20px;
+    }
+
+    .textInput{
+        font-size: 40px;
+        height: 50vh;
+    }
+
+    #texto-input-salida{
+        margin-top: 2%;
+        width: 90%;
+        height: 30vh;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 365px){
+    .textInput{
+        font-size: 2vh;
+    }
+}

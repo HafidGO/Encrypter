@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Encriptador</title>
+        <!--Formatos CSS-->
+        <link rel="stylesheet" href="css/bases.css">
+        <link rel="stylesheet" href="css/botones.css">
+        <link rel="stylesheet" href="css/contenedores.css">
+        <link rel="stylesheet" href="css/imagenes.css">
+        <link rel="stylesheet" href="css/textos.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <!-- Fuentes importadass de Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <main  class="contenidoPrincipal">
+            <!--Contenedor donde se ingresa el texto a encriptar-->
+            <div class="contenedorIngreso">
+                <!--Contenedor donde se encuentra el logo de ALurar-->
+                <div class="contenedorLogo">
+                    <img id ="logoAlura" src="imagenes/logoAlura.png" alt="Logo Alura">
+                </div>
+                <!--Contenedor donde se ingresa el texto a encriptar-->
+                <div class="contenedorInput">
+                    <!-- Contenedor del texto a encriptar-->
+                    <input id="input-texto" type="text" class="textInput" required placeholder="Ingrese el texto aquí" value="">
+                    <!-- Conteneder del aviso de solo letras y minusculas -->
+                    <div class="contenedorMinusculas">
+                        <img id ="signoExclamacion" src="imagenes/signo-de-exclamacion.png"> 
+                        <p id="textoMinusculas"> Solo letras y minúsculas y sin acentos</p>
+                    </div>
+                </div>
+                <!--Contenedor de botones-->
+                <div id="contenedorBoton">
+                    <!-- Botón para encriptar -->
+                    <button onclick="getValue()" type="button" id="boton1">Encriptar</button>
+                    <!-- Botón para desencriptar -->
+                    <button onclick="desencriptar()" type="button" id="boton2">Desencriptar</button>
+                </div>
+            </div>
+            <!--Rectangulo que se muestra del lado derecho con el texto encriptado-->
+            <div class="contenedorSalida">
+                <label for="textoSalida"></label>
+                <img id="muñecoAlura" src="imagenes/Muñeco.png" alt="muñeco Alura">
+                <!-- Salida del texto encriptado -->
+                <p id="texto-input-salida">Texto muestra</textarea>
+                <!--Texto que avisa quen no se ha ingresado ningún texto a encriptar-->
+                <p id="avisoIngreso">Ningún mensaje fue encontrado</p>
+                <!-- Saltos de línea -->
+                <br>
+                <br>
+                <!-- Aviso que pide ingresar el texto a encriptar -->
+                <p id="avisoIngreso2">Ingresa el texto que deseas encriptar o desencriptar</p>
+                <!-- Botón con la función de copiar el texto encriptado -->
+                <button onclick="copiar()" type="button" id="boton3">Copiar</button>
+            </div>
+        </main>
+        <script src="js/encrypter.js"> </script>     
+    </body>
+</html>

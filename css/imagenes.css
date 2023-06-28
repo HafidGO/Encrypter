@@ -1,0 +1,29 @@
+#logoAlura{
+    margin: 2%; 
+}
+
+#signoExclamacion{
+    width: 13px;
+    float: left;
+    margin-right: 5px;
+}
+
+#muñecoAlura{
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+    width: 90%;
+    
+}
+
+@media screen and (max-width: 768px){
+    #muñecoAlura{
+        display: none;
+        margin-top: 10px; 
+        width: 90%;
+        
+    }
+}
+
+@media screen and (min-width: 365px){
+
+}
